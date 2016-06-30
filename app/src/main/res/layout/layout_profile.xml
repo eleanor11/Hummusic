@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_layout_record"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/profile_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_top_bar_height">
+            <include layout="@layout/profile_header">
+
+            </include>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/profile_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/profile_1">
+            </include>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

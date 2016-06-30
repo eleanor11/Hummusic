@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:src="@drawable/user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/userImageViewLeft"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:src="@drawable/user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/userImageViewRight"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:src="@drawable/dialogue_left1"
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:id="@+id/dialogueImageViewLeft"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/userImageViewLeft"
+            android:layout_marginRight="20dp"/>
+
+
+        <ImageView
+            android:src="@drawable/dialogue_right"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:id="@+id/dialogueImageViewRight"
+            android:layout_alignTop="@+id/userImageViewRight"
+            android:layout_toLeftOf="@+id/userImageViewRight"
+            android:layout_toStartOf="@+id/userImageViewRight"
+            android:layout_marginTop="5dp" />
+
+
+
+        <com.hummusic.widgets.StaffSurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/staffView"
+            android:layout_alignTop="@+id/dialogueImageViewLeft"
+            android:layout_toRightOf="@+id/userImageViewLeft"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignBottom="@+id/dialogueImageViewLeft"
+            android:layout_alignRight="@+id/dialogueImageViewLeft"
+            android:layout_alignEnd="@+id/dialogueImageViewLeft" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:id="@+id/dialoguePlayScore"
+            android:src="@drawable/main_play"
+            android:layout_alignLeft="@+id/dialogueImageViewLeft"
+            android:layout_alignTop="@+id/dialogueImageViewLeft"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="50dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/dialoguePlayAudio"
+            android:src="@drawable/main_play"
+            android:layout_alignRight="@+id/dialogueImageViewRight"
+            android:layout_alignTop="@+id/dialogueImageViewRight"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="40dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/teacherImage"
+        android:src="@drawable/bg_radix_teacher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/studentImage"
+        android:src="@drawable/bg_radix_student"
+        android:layout_below="@+id/teacherImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:clickable="true" />
+
+
+</RelativeLayout>

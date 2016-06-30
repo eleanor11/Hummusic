@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topbarBgImageView"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bg_main_top_bar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:id="@+id/topbarImageView"
+        android:src="#00003f"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/main_menu" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileImageView"
+        android:layout_alignTop="@+id/menuImageView"
+        android:layout_toStartOf="@+id/menuImageView"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/main_logoff" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backImageView"
+        android:layout_marginLeft="17dp"
+        android:layout_alignTop="@+id/profileImageView"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/main_back" />
+
+</RelativeLayout>

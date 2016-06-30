@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_layout_record"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <RelativeLayout
+            android:id="@+id/profile_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_top_bar_height">
+            <include layout="@layout/profile_header">
+
+            </include>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_search"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <include layout="@layout/user_search">
+
+            </include>
+        </RelativeLayout>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/usersListView"
+            android:layout_weight="0.99">
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/user_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="107dp">
+            <include layout="@layout/user_bottom">
+
+            </include>
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

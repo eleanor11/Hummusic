@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:theme="@android:style/Theme.NoTitleBar"
+    >
+    <RelativeLayout
+        android:id="@+id/login_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <include layout="@layout/register_1">
+
+        </include>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/login_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <include layout="@layout/register_2">
+
+        </include>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/login_layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <include layout="@layout/register_3">
+
+        </include>
+    </RelativeLayout>
+
+
+</RelativeLayout>

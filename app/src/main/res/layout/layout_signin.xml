@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:theme="@android:style/Theme.NoTitleBar"
+    >
+    <RelativeLayout
+        android:id="@+id/signin_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <include layout="@layout/signin_1">
+
+        </include>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/item_title" />
+
+    <com.hummusic.widgets.StaffSurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listview_item_height"
+        android:layout_below="@+id/item_title"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/staffView" />
+
+    <!--
+    <com.hummusic.widgets.StaffView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listview_item_height"
+        android:layout_below="@+id/item_title"
+        android:layout_alignParentStart="true"
+        android:id="@+id/staffView" />
+     -->
+    <!--
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listview_item_height"
+        android:layout_below="@+id/item_title"
+        android:layout_alignParentStart="true"
+        android:id="@+id/surfaceView" />
+        -->
+
+    <ImageView
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginTop="30dp"
+        android:id="@+id/item_playImage"
+        android:layout_below="@+id/staffView"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/main_play" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginTop="30dp"
+        android:id="@+id/item_pauseImage"
+        android:layout_below="@+id/staffView"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pause" />
+
+    <ImageView
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:id="@+id/item_uploadImage"
+        android:layout_marginRight="50dp"
+        android:layout_alignTop="@+id/item_playImage"
+        android:layout_toLeftOf="@+id/item_playImage"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:id="@+id/item_writeImage"
+        android:layout_alignTop="@+id/item_playImage"
+        android:layout_toRightOf="@+id/item_playImage"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/list_item_write" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/deletButton"
+        android:layout_above="@+id/staffView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/delete" />
+
+    <RelativeLayout
+        android:id="@+id/choicesLayout"
+        android:visibility="invisible"
+        android:background="#a0ffffff"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listview_item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yesTextView"
+            android:text="YES"
+            android:textColor="#0000ff"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noTextView"
+            android:text="NO"
+            android:textColor="#0000ff"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/coverLayout"
+        android:visibility="invisible"
+        android:background="#a0ffffff"
+        android:layout_below="@+id/item_title"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="3dp"
+            android:background="#0f5dad"
+            android:id="@+id/progressImage"
+            android:layout_below="@+id/timeTextView"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/progressnode"
+            android:id="@+id/progressNodeImage"
+            android:layout_toLeftOf="@id/progressImage"
+            android:layout_below="@+id/timeTextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:39"
+            android:textSize="17sp"
+            android:textColor="#333333"
+            android:layout_marginRight="60dp"
+            android:id="@+id/timeTextView"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/profile_0"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_height="24dp"
+        android:layout_width="204dp"
+        android:layout_marginTop="60dp"
+        android:text="NAME RESET"
+        android:id="@+id/nameResetText"
+        android:background="@drawable/corner_view_opa_15"
+        android:textColor="#aaaaaa"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_height="24dp"
+        android:layout_width="204dp"
+        android:layout_marginTop="14dp"
+        android:text="PASSWORD RESET"
+        android:id="@+id/pwResetText"
+        android:background="@drawable/corner_view_opa_15"
+        android:textColor="#aaaaaa"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/nameResetText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="92dp"
+        android:text="SAVE"
+        android:id="@+id/saveTextView"
+        android:gravity="center"
+        android:background="#26f4da"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_below="@+id/pwResetText"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

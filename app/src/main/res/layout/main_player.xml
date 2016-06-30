@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="3dp"
+        android:background="#0f5dad"
+        android:id="@+id/progressImage"
+        android:layout_below="@+id/timeTextView"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/progressnode"
+        android:id="@+id/progressNodeImage"
+        android:layout_toLeftOf="@id/progressImage"
+        android:layout_below="@+id/timeTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3:39"
+        android:textSize="17sp"
+        android:textColor="#333333"
+        android:layout_marginRight="60dp"
+        android:id="@+id/timeTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginTop="13dp"
+        android:id="@+id/playImageView"
+        android:layout_below="@+id/progressImage"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/main_play" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginTop="13dp"
+        android:id="@+id/pauImageView"
+        android:layout_below="@+id/progressImage"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pause" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="@string/main_save"
+        android:textColor="#003fff"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:id="@+id/saveButton"
+        android:layout_alignTop="@+id/playImageView"
+        android:layout_alignLeft="@+id/progressImage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_cancel"
+        android:textColor="#003fff"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:id="@+id/cancelButton"
+        android:layout_alignTop="@+id/playImageView"
+        android:layout_alignRight="@+id/progressImage" />
+
+
+</RelativeLayout>

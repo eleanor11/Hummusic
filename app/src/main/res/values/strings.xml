@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HumMusic</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_register">Register</string>
+    <string name="login_signin">Sign in</string>
+    <string name="login_name">NAME</string>
+    <string name="login_email">E-MAIL</string>
+    <string name="login_pw">PASSWORD</string>
+    <string name="login_login">Login</string>
+    <string name="register_hint">Click the button \nand SET PROFILE PHOTO</string>
+    <string name="register_start">START</string>
+    <string name="main_hint1">Click the button \nand START recording</string>
+    <string name="main_hint2">Click the button \nand STOP recording</string>
+    <string name="main_hint3">Click the button \nand CONVERT</string>
+    <string name="main_songname">NAME OF SONG</string>
+    <string name="main_save">Save it</string>
+    <string name="main_cancel">Cancel</string>
+</resources>

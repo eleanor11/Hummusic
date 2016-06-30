@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="225dp"
+        android:id="@+id/recordImageView"
+        android:src="@drawable/music_rotate_1"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <com.hummusic.widgets.GifView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/recordGifView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/main_hint1"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#111111"
+        android:id="@+id/hintTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp" />
+</RelativeLayout>

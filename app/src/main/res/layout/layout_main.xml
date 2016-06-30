@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:theme="@android:style/Theme.NoTitleBar">
+
+
+    <!--
+    <LinearLayout
+        android:id="@+id/main_layout_record"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/main_top_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_top_content_height">
+            <include layout="@layout/main_top_content">
+
+            </include>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_bottom_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/main_bottom_content">
+
+            </include>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/main_layout_viewContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_preview_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_top_bar_height">
+            <include layout="@layout/main_top_bar">
+
+            </include>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_layout_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main_preview_top_bar">
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/main_preview_content">
+
+                </include>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    -->
+
+    <FrameLayout
+        android:id="@+id/recordContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/listViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</RelativeLayout>
